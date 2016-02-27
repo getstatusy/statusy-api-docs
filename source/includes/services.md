@@ -2,6 +2,43 @@
 
 ## Get all Services
 
+```
+curl https://statusy.co/api/v1/APITOKEN/service/all
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "services": [
+    {
+      "id": 1,
+      "account_id": 1,
+      "description": "Service",
+      "status_enum": 1
+    },
+    {
+      "id": 2,
+      "account_id": 1,
+      "description": "Another Service",
+      "status_enum": 1
+    },
+    {
+      "id": 3,
+      "account_id": 1,
+      "description": "Yet Another Service",
+      "status_enum": 1
+    }
+  ]
+}
+```
+
+This endpoint returns the details of all services on your account.
+
+### HTTP Request
+
+`GET https://statusy.co/api/v1/APITOKEN/service/all`
+
 ## Get a Service
 
 ```
