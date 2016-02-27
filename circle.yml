@@ -3,4 +3,4 @@ machine:
   version: 2.1.0
 test:
  override:
-  - bundle middleman exec server
+  - bundle exec middleman build --clean
