@@ -8,3 +8,4 @@ used when interacting with the Statusy API:
 2. All endpoints are predicated with `/api` followed by the API version (version
 1 if you are reading this documentation) so the full predicate is `/api/v1`.
 3. All endpoints use standard request types (POST is create, PUT is for updates, etc.)
+4. All endpoints return data in JSON. 
