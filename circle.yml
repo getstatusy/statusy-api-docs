@@ -4,3 +4,8 @@ machine:
 test:
  override:
   - bundle exec middleman build --clean
+deployment:
+ push_to_server:
+  branch: master
+  commands:
+   - rsync -avz build/ circleci@api.statusy.co:/var/www/statusy-api-docs
