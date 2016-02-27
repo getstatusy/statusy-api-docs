@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Statusy - API Documentation
 
 toc_footers:
   - <a href='https://statusy.co/profile'>Get a Statusy API Token</a>
