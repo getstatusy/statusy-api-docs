@@ -99,6 +99,12 @@ Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
 
+### JSON Parameters
+
+Parameter | Description
+--------- | -----------
+`description` | The description is the title of the service, for example "Website" or "Database".
+
 ## Update a Service
 
 ```
@@ -130,6 +136,12 @@ Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
 SERVICE_ID | The numeric ID of the service you want to update
+
+### JSON Parameters
+
+Parameter | Description
+--------- | -----------
+`description` | The description is the title of the service, for example "Website" or "Database".
 
 ## Delete a Service
 
