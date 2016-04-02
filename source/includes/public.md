@@ -4,7 +4,7 @@
 
 ```
 curl
- https://statusy.co/api/v1/public/status/enums
+ https://app.statusy.co/api/v1/public/status/enums
 
 ```
 
@@ -31,4 +31,4 @@ This endpoint returns all possible enums for the service status.
 
 ### HTTP Request
 
-`GET https://statusy.co/api/v1/public/status/enums`
+`GET https://app.statusy.co/api/v1/public/status/enums`

@@ -3,7 +3,7 @@
 ## Get all Services
 
 ```
-curl https://statusy.co/api/v1/APITOKEN/service/all
+curl https://app.statusy.co/api/v1/APITOKEN/service/all
 ```
 
 > The above command returns JSON structured like this:
@@ -37,12 +37,12 @@ This endpoint returns the details of all services on your account.
 
 ### HTTP Request
 
-`GET https://statusy.co/api/v1/APITOKEN/service/all`
+`GET https://app.statusy.co/api/v1/APITOKEN/service/all`
 
 ## Get a Service
 
 ```
-curl https://statusy.co/api/v1/APITOKEN/service/SERVICE_ID
+curl https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID
 ```
 
 > The above command returns JSON structured like this:
@@ -59,7 +59,7 @@ This endpoint returns the details of a specific service.
 
 ### HTTP Request
 
-`GET https://statusy.co/api/v1/APITOKEN/service/SERVICE_ID`
+`GET https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID`
 
 ### URL Parameters
 
@@ -75,7 +75,7 @@ curl
  -X POST
  -H "Content-Type:application/json"
  -d '{"description": "Website"}'
- https://statusy.co/api/v1/APITOKEN/service
+ https://app.statusy.co/api/v1/APITOKEN/service
 ```
 
 > The above command returns JSON structured like this:
@@ -91,7 +91,7 @@ This endpoint allows for the creation of a new service.
 
 ### HTTP Request
 
-`POST https://statusy.co/api/v1/APITOKEN/service`
+`POST https://app.statusy.co/api/v1/APITOKEN/service`
 
 ### URL Parameters
 
@@ -112,7 +112,7 @@ curl
  -X PUT
  -H "Content-Type:application/json"
  -d '{"description": "Son of Website"}'
- https://statusy.co/api/v1/APITOKEN/service/SERVICE_ID
+ https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID
 
 ```
 
@@ -128,7 +128,7 @@ This endpoint allows you to update the description of a particular service.
 
 ### HTTP Request
 
-`PUT https://statusy.co/api/v1/APITOKEN/service/SERVICE_ID`
+`PUT https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID`
 
 ### URL Parameters
 
@@ -149,7 +149,7 @@ Parameter | Description
 curl
  -X DELETE
  -H "Content-Type:application/json"
- https://statusy.co/api/v1/APITOKEN/service/SERVICE_ID
+ https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID
 
 ```
 
@@ -165,7 +165,7 @@ This endpoint allows you to delete an existing service.
 
 ### HTTP Request
 
-`DELETE https://statusy.co/api/v1/APITOKEN/service/SERVICE_ID`
+`DELETE https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID`
 
 ### URL Parameters
 
