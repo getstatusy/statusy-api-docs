@@ -2,7 +2,7 @@
 title: Statusy - API Documentation
 
 toc_footers:
-  - <a href='https://statusy.co/profile'>Get a Statusy API Token</a>
+  - <a href='https://app.statusy.co/profile'>Get a Statusy API Token</a>
   - <a href='https://statusy.co/'>Return to Statusy</a>
 
 includes:
