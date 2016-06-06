@@ -3,7 +3,7 @@
 ## Get all Incidents
 
 ```
-curl https://app.statusy.co/api/v1/APITOKEN/incident/all
+curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident/all
 ```
 
 > The above command returns JSON structured like this:
@@ -37,13 +37,14 @@ This endpoint returns the details of all incidents on your account.
 
 ### HTTP Request
 
-`GET https://app.statusy.co/api/v1/APITOKEN/incident/all`
+`GET https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident/all`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
+STATUSPAGE_ID | The numberic ID of the status page this incident belongs to.
 
 <aside class="notice">
 If <code>solved_date</code> is set in the response this incident has been resolved.
@@ -52,7 +53,7 @@ If <code>solved_date</code> is set in the response this incident has been resolv
 ## Get an Incident
 
 ```
-curl https://app.statusy.co/api/v1/APITOKEN/incident
+curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident
 ```
 
 > The above command returns JSON structured like this:
@@ -73,13 +74,14 @@ This endpoint returns the details of all incidents on your account.
 
 ### HTTP Request
 
-`GET https://app.statusy.co/api/v1/APITOKEN/incident`
+`GET https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
+STATUSPAGE_ID | The numberic ID of the status page this incident belongs to.
 
 <aside class="notice">
 If <code>solved_date</code> is set in the response this incident has been resolved.
@@ -93,7 +95,7 @@ curl
  -X POST
  -H "Content-Type:application/json"
  -d '{"service_id": 2, "title": "Something broke!", "description": "Smoke, fire, everywhere!", "status": 2}'
- https://app.statusy.co/api/v1/APITOKEN/incident
+ https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident
 ```
 
 > The above command returns JSON structured like this:
@@ -109,13 +111,14 @@ This endpoint allows you to create a new incident.
 
 ### HTTP Request
 
-`POST https://app.statusy.co/api/v1/APITOKEN/incident`
+`POST https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
+STATUSPAGE_ID | The numberic ID of the status page this incident belongs to.
 
 ### JSON Parameters
 
@@ -133,7 +136,7 @@ curl
  -X POST
  -H "Content-Type:application/json"
  -d '{"service_id": 2, "title": "Something broke!", "description": "Smoke, fire, everywhere!", "status": 2}'
- https://app.statusy.co/api/v1/APITOKEN/incident/INCIDENT_ID
+ https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident/INCIDENT_ID
 ```
 
 > The above command returns JSON structured like this:
@@ -150,7 +153,7 @@ This endpoint allows you to add an update to an existing incident.
 
 ### HTTP Request
 
-`POST https://app.statusy.co/api/v1/APITOKEN/incident/INCIDENT_ID`
+`POST https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident/INCIDENT_ID`
 
 ### URL Parameters
 
@@ -158,6 +161,7 @@ Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
 INCIDENT_ID | The numeric ID of the incident you want to add an update to.
+STATUSPAGE_ID | The numberic ID of the status page this incident belongs to.
 
 ### JSON Parameters
 

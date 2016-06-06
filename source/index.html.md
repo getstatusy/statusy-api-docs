@@ -8,6 +8,7 @@ toc_footers:
 includes:
   - authentication
   - conventions
+  - statuspages
   - services
   - incidents
   - public

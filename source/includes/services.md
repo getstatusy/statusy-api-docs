@@ -3,7 +3,7 @@
 ## Get all Services
 
 ```
-curl https://app.statusy.co/api/v1/APITOKEN/service/all
+curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service/all
 ```
 
 > The above command returns JSON structured like this:
@@ -37,12 +37,12 @@ This endpoint returns the details of all services on your account.
 
 ### HTTP Request
 
-`GET https://app.statusy.co/api/v1/APITOKEN/service/all`
+`GET https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service/all`
 
 ## Get a Service
 
 ```
-curl https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID
+curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service/SERVICE_ID
 ```
 
 > The above command returns JSON structured like this:
@@ -59,7 +59,7 @@ This endpoint returns the details of a specific service.
 
 ### HTTP Request
 
-`GET https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID`
+`GET https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service/SERVICE_ID`
 
 ### URL Parameters
 
@@ -67,6 +67,7 @@ Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
 SERVICE_ID | The numeric ID of the service you want to get
+STATUSPAGE_ID | The numeric ID of the status page the service belongs to
 
 ## Create a Service
 
@@ -75,7 +76,7 @@ curl
  -X POST
  -H "Content-Type:application/json"
  -d '{"description": "Website"}'
- https://app.statusy.co/api/v1/APITOKEN/service
+ https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service
 ```
 
 > The above command returns JSON structured like this:
@@ -91,13 +92,14 @@ This endpoint allows for the creation of a new service.
 
 ### HTTP Request
 
-`POST https://app.statusy.co/api/v1/APITOKEN/service`
+`POST https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
+STATUSPAGE_ID | The numeric ID of the status page the service belongs to
 
 ### JSON Parameters
 
@@ -112,7 +114,7 @@ curl
  -X PUT
  -H "Content-Type:application/json"
  -d '{"description": "Son of Website"}'
- https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID
+ https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service/SERVICE_ID
 
 ```
 
@@ -128,7 +130,7 @@ This endpoint allows you to update the description of a particular service.
 
 ### HTTP Request
 
-`PUT https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID`
+`PUT https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service/SERVICE_ID`
 
 ### URL Parameters
 
@@ -136,6 +138,7 @@ Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
 SERVICE_ID | The numeric ID of the service you want to update
+STATUSPAGE_ID | The numeric ID of the status page the service belongs to
 
 ### JSON Parameters
 
@@ -149,7 +152,7 @@ Parameter | Description
 curl
  -X DELETE
  -H "Content-Type:application/json"
- https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID
+ https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service/SERVICE_ID
 
 ```
 
@@ -165,7 +168,7 @@ This endpoint allows you to delete an existing service.
 
 ### HTTP Request
 
-`DELETE https://app.statusy.co/api/v1/APITOKEN/service/SERVICE_ID`
+`DELETE https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/service/SERVICE_ID`
 
 ### URL Parameters
 
@@ -173,3 +176,4 @@ Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
 SERVICE_ID | The numeric ID of the service you want to delete
+STATUSPAGE_ID | The numeric ID of the status page the service belongs to
