@@ -8,4 +8,4 @@ deployment:
  push_to_server:
   branch: master
   commands:
-   - rsync -avz build/ circleci@api.statusy.co:/var/www/statusy-api-docs
+   - rsync -avz build/ circleci@api.statusy.co:/var/www/api.statusy.co
