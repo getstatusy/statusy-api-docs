@@ -9,6 +9,7 @@ includes:
   - authentication
   - conventions
   - statuspages
+  - notifications
   - services
   - incidents
   - public
