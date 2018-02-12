@@ -8,6 +8,7 @@ toc_footers:
 includes:
   - authentication
   - conventions
+  - teams
   - statuspages
   - notifications
   - services
