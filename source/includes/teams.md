@@ -1,6 +1,6 @@
 # Teams
 
-## Get all users on team
+## Get all Users on a Team
 
 ```
 curl
@@ -35,7 +35,7 @@ Parameter | Description
 --------- | -----------
 APITOKEN | Your API token
 
-## Invite User to team
+## Invite User to a Team
 
 ```
 curl
@@ -73,7 +73,7 @@ Parameter | Description
 --------- | -----------
 `email` | The email address of the person you wish to add to your team
 
-## Remove User from team
+## Remove User from a Team
 
 ```
 curl

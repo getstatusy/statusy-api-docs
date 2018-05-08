@@ -1,5 +1,48 @@
 # Status Pages
 
+## Get Status Page
+
+```
+curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGEID
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "google_analytics_token": null,
+  "id": 10,
+  "incidents": [],
+  "is_active": true,
+  "name": "AStatusPage",
+  "services": [
+    17,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "subdomain": "AStatusPage",
+  "updated_date": "Fri, 27 May 2016 03:48:22 GMT"
+}
+```
+
+This endpoint returns an object with the details of the request status page.
+
+### HTTP Request
+
+`GET https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGEID`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+APITOKEN | Your API token
+STATUSPAGEID | The ID of the status page you want to get
+
 ## Get all Status Pages
 
 ```
