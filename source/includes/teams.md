@@ -16,7 +16,7 @@ https://app.statusy.co/api/v1/APITOKEN/team
   "team": [
     {
       "id": 1,
-      "email": "demo@email.com",
+      "email": "demo@email.com"
     },
   ]
 }

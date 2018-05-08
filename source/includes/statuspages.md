@@ -16,14 +16,24 @@ curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGEID
   "is_active": true,
   "name": "AStatusPage",
   "services": [
-    17,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16
+    {
+      "id": 1,
+      "account_id": 1,
+      "description": "Service",
+      "status_enum": 1
+    },
+    {
+      "id": 2,
+      "account_id": 1,
+      "description": "Another Service",
+      "status_enum": 1
+    },
+    {
+      "id": 3,
+      "account_id": 1,
+      "description": "Yet Another Service",
+      "status_enum": 1
+    }
   ],
   "subdomain": "AStatusPage",
   "updated_date": "Fri, 27 May 2016 03:48:22 GMT"
@@ -61,14 +71,24 @@ curl https://app.statusy.co/api/v1/APITOKEN/statuspages
       "is_active": true,
       "name": "AStatusPage",
       "services": [
-        17,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16
+        {
+          "id": 1,
+          "account_id": 1,
+          "description": "Service",
+          "status_enum": 1
+        },
+        {
+          "id": 2,
+          "account_id": 1,
+          "description": "Another Service",
+          "status_enum": 1
+        },
+        {
+          "id": 3,
+          "account_id": 1,
+          "description": "Yet Another Service",
+          "status_enum": 1
+        }
       ],
       "subdomain": "AStatusPage",
       "updated_date": "Fri, 27 May 2016 03:48:22 GMT"
@@ -80,7 +100,12 @@ curl https://app.statusy.co/api/v1/APITOKEN/statuspages
       "is_active": true,
       "name": "AnotherStatusPage",
       "services": [
-        18
+        {
+          "id": 18,
+          "account_id": 1,
+          "description": "Service",
+          "status_enum": 1
+        }
       ],
       "subdomain": "AnotherStatusPage",
       "updated_date": "Fri, 27 May 2016 03:54:52 GMT"
