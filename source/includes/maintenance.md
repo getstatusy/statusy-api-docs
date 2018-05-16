@@ -104,7 +104,7 @@ Parameter | Description
 APITOKEN | Your API token
 STATUSPAGE_ID | The numberic ID of the status page this maintenance belongs to.
 
-## Get an Maintenance Event
+## Get a Maintenance Event
 
 ```
 curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/maintenance/MAINTENANCE_ID
