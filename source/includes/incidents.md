@@ -53,7 +53,7 @@ If <code>solved_date</code> is set in the response this incident has been resolv
 ## Get an Incident
 
 ```
-curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident
+curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident/INCIDENT_ID
 ```
 
 > The above command returns JSON structured like this:
@@ -70,11 +70,11 @@ curl https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident
 }
 ```
 
-This endpoint returns the details of all incidents on your account.
+This endpoint returns the details of the specified incident.
 
 ### HTTP Request
 
-`GET https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident`
+`GET https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident/INCIDENT_ID`
 
 ### URL Parameters
 

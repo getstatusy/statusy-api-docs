@@ -11,6 +11,7 @@ includes:
   - statuspages
   - services
   - incidents
+  - maintenance
   - users
   - teams
   - notifications
