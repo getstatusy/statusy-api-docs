@@ -129,6 +129,50 @@ Parameter | Description
 `description` | A long text description of the incident. Tell your users what is happening here.
 `status` | This is a status enum representing the status of the service given this incident.
 
+## Import a Historical Incident
+
+```
+curl
+ -X POST
+ -H "Content-Type:application/json"
+ -d '{"service_id": 2, "title": "Something broke!", "description": "Smoke, fire, everywhere!", "status": 2, "created_date": 2018-02-20 04:29:53.125354+00, "solved_date": 2018-02-20 04:29:53.125354+00}'
+ https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident/historical
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "incident_id": 2,
+  "status": "success"
+}
+```
+
+This endpoint allows you to import old incidents you forgot to add, or that you want to import from
+a previous status page.
+
+### HTTP Request
+
+`POST https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident/historical`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+APITOKEN | Your API token
+STATUSPAGE_ID | The numberic ID of the status page this incident belongs to.
+
+### JSON Parameters
+
+Parameter | Description
+--------- | -----------
+`service_id` | The numeric ID of the service this incident is related to
+`title` | The title of this incident
+`description` | A long text description of the incident. Tell your users what is happening here.
+`status` | This is a status enum representing the status of the service given this incident.
+`created_date` | When this incident was originally created.
+`solved_date` | When this incident was originally solved. 
+
 ## Update an Incident
 
 ```
