@@ -94,7 +94,7 @@ If <code>solved_date</code> is set in the response this incident has been resolv
 curl
  -X POST
  -H "Content-Type:application/json"
- -d '{"service_id": 2, "title": "Something broke!", "description": "Smoke, fire, everywhere!", "status": 2}'
+ -d '{"service_id": 2, "title": "Something broke!", "description": "Smoke, fire, everywhere!", "status_enum": 2}'
  https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident
 ```
 
@@ -127,7 +127,7 @@ Parameter | Description
 `service_id` | The numeric ID of the service this incident is related to
 `title` | The title of this incident
 `description` | A long text description of the incident. Tell your users what is happening here.
-`status` | This is a status enum representing the status of the service given this incident.
+`status_enum` | This is a status enum representing the status of the service given this incident. Reference get all statuses endpoint for a list of valid IDs. 
 
 ## Import a Historical Incident
 
@@ -171,7 +171,7 @@ Parameter | Description
 `description` | A long text description of the incident. Tell your users what is happening here.
 `status` | This is a status enum representing the status of the service given this incident.
 `created_date` | When this incident was originally created.
-`solved_date` | When this incident was originally solved. 
+`solved_date` | When this incident was originally solved.
 
 ## Update an Incident
 
