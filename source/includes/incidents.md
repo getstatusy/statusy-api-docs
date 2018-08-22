@@ -125,6 +125,7 @@ STATUSPAGE_ID | The numberic ID of the status page this incident belongs to.
 Parameter | Description
 --------- | -----------
 `service_id` | The numeric ID of the service this incident is related to
+`subservice_id` | The numeric ID of the subservice this incident is related to (optional, `service_id` is still required)
 `title` | The title of this incident
 `description` | A long text description of the incident. Tell your users what is happening here.
 `status` | This is the ID of a status representing the status of the service given this incident. Reference get all statuses endpoint for a list of valid IDs.
