@@ -180,7 +180,7 @@ Parameter | Description
 curl
  -X POST
  -H "Content-Type:application/json"
- -d '{"service_id": 2, "title": "Something broke!", "description": "Smoke, fire, everywhere!", "status": 2}'
+ -d '{"service_id": 2, "title": "Something broke!", "description": "Smoke, fire, everywhere!", "status": 1234}'
  https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/incident/INCIDENT_ID
 ```
 
@@ -212,12 +212,7 @@ STATUSPAGE_ID | The numberic ID of the status page this incident belongs to.
 
 Parameter | Description
 --------- | -----------
-`service_id` | The numeric ID of the service this incident is related to
 `title` | The title of this incident
 `description` | A long text description of the incident. Tell your users what is happening here.
-`status` | This is a status enum representing the status of the service given this incident.
-
-<aside class="notice">
-If <code>status</code> is provided and it is equal to 1 (enum for all good) this incident will be marked
-as resolved. If you provide any other status code, the status will be updated to reflect the new status.
-</aside>
+`status` | (OPTIONAL) This is a status enum representing the status of the service given this incident. If this key is not provided the current status will remain unchanged.
+`resolve` | (OPTIONAL) Provide this key with the value of true to resolve the incident.
