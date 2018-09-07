@@ -22,6 +22,11 @@ curl
 
 This endpoint allows you to add a new email subscriber to your status page. The email you provide will receive email notifications when the status of your service(s) has changed.
 
+You can optionally specify the `service_id` or the `service_id` AND the `subservice_id` to the request to subscribe a user to the specified service or
+service/subservice pair.
+
+If you do not provide `service_id` or `subservice_id`, the user will be subscribed to _all_ services.
+
 ### HTTP Request
 
 `POST https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/subscriber/email/new`
@@ -38,6 +43,8 @@ STATUSPAGE_ID | The numeric ID of the status page this subscriber should be adde
 Parameter | Description
 --------- | -----------
 `email` | The email address notifications should be sent to
+`service_id` | (Optional) The ID of a service to subscribe this user to
+`subservice_id` | (Optional) The ID of a subservice to subscribe this user to, `service_id` is also required if `subservice_id` is present
 
 ## Remove Email Subscriber
 
@@ -99,6 +106,11 @@ curl
 
 This endpoint allows you to add a new SMS subscriber to your status page. The email you provide will receive SMS notifications when the status of your service(s) has changed.
 
+You can optionally specify the `service_id` or the `service_id` AND the `subservice_id` to the request to subscribe a user to the specified service or
+service/subservice pair.
+
+If you do not provide `service_id` or `subservice_id`, the user will be subscribed to _all_ services.
+
 ### HTTP Request
 
 `POST https://app.statusy.co/api/v1/APITOKEN/statuspage/STATUSPAGE_ID/subscriber/sms/new`
@@ -115,6 +127,8 @@ STATUSPAGE_ID | The numeric ID of the status page this subscriber should be adde
 Parameter | Description
 --------- | -----------
 `phone` | The phone number notifications should be sent to
+`service_id` | (Optional) The ID of a service to subscribe this user to
+`subservice_id` | (Optional) The ID of a subservice to subscribe this user to, `service_id` is also required if `subservice_id` is present
 
 ## Remove SMS Subscriber
 
